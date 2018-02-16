@@ -1,6 +1,6 @@
 target 'DrX' do
   use_frameworks!
-  podspec :name 'DrX.podspec'
+  podspec :name => 'DrX.podspec'
 
   target 'DrXTests' do
     inherit! :search_paths
