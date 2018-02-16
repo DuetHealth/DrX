@@ -4,6 +4,9 @@ xcode_workspace: DrX.xcworkspace #3
 xcode_scheme: DrX #4
 xcode_sdk: iphonesimulator11.2
 
+before_install:
+  - gem install cocoapods -v '1.4.0'
+
 install:
   - pod repo update
   - pod install
