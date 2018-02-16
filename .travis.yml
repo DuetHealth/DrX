@@ -12,5 +12,5 @@ install:
   - pod install
 
 script: 
-  - xcodebuild -workspace DrX.xcworkspace -scheme DrX -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+  - travis_wait xcodebuild -workspace DrX.xcworkspace -scheme DrX -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
   - xcodebuild test -workspace DrX.xcworkspace -scheme DrX -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.0' -sdk iphonesimulator
