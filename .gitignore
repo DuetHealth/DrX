@@ -11,9 +11,7 @@ build/*
 *.xcworkspace
 *.xcworkspace/xcuserdata
 !default.xcworkspace
-!*.xcworkspace/contents.xcworkspacedata
 xcuserdata
-*.xcodeproj/
 profile
 *.moved-aside
 DerivedData
