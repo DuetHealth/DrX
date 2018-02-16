@@ -1,7 +1,6 @@
 target 'DrX' do
   use_frameworks!
-  pod 'RxCocoa'
-  pod 'RxSwift'
+  podspec :name 'DrX.podspec'
 
   target 'DrXTests' do
     inherit! :search_paths
