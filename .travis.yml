@@ -1,0 +1,9 @@
+language: objective-c  #1
+osx_image: xcode9.2 #2
+xcode_workspace: DrX.xcworkspace #3
+xcode_scheme: DrX #4
+xcode_sdk: iphonesimulator11.2
+
+script: 
+  - xcodebuild -workspace DrX.xcworkspace -scheme DrX -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+  - xcodebuild test -workspace DrX.xcworkspace -scheme DrX -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.0' -sdk iphonesimulator
