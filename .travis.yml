@@ -8,8 +8,7 @@ before_install:
   - gem install cocoapods -v '1.4.0'
 
 install:
-  - pod repo update
-  - pod install
+  - pod install --repo-update
 
 script: 
   - xcodebuild -workspace DrX.xcworkspace -scheme DrX -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty
