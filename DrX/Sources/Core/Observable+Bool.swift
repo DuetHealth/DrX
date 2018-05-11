@@ -10,7 +10,7 @@ public extension DrXFactoryNamespace where Element == Bool {
 
     public func or(_ sources: SequenceType...) -> Observable<Bool> {
         return base.combineLatest(sources)
-            .map { !$0.contains(false) }
+            .map { $0.contains(true) }
     }
 
 }
