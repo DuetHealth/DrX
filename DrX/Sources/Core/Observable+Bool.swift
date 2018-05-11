@@ -1,6 +1,19 @@
-
 import Foundation
 import RxSwift
+
+public extension DrXFactoryNamespace where Element == Bool {
+
+    public func and(_ sources: SequenceType...) -> Observable<Bool> {
+        return base.combineLatest(sources)
+            .map { !$0.contains(false) }
+    }
+
+    public func or(_ sources: SequenceType...) -> Observable<Bool> {
+        return base.combineLatest(sources)
+            .map { !$0.contains(false) }
+    }
+
+}
 
 public extension DrXNamespace where Element == Bool {
 
