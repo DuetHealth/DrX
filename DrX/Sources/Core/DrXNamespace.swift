@@ -1,7 +1,7 @@
 import Foundation
 import RxSwift
 
-/// Encapsulates DrX extensions within a "proxy namespace" struct.
+/// Encapsulates DrX extensions on an instance within a "proxy namespace" struct.
 ///
 /// Custom operators belonging to this namespace can be called similar to
 /// ```
@@ -22,15 +22,15 @@ public struct DrXNamespace<SequenceType, Element> where SequenceType: Observable
 
 }
 
-/// Encapsulates DrX extensions within a "proxy namespace" struct.
+/// Encapsulates DrX extensions on a type within a "proxy namespace" struct.
 ///
 /// Custom operators belonging to this namespace can be called similar to
 /// ```
 /// ...
 ///
-/// observable.drx.replace(lifting: "Hello, World!")
-///     .bind(to: myLabel.rx.text)
-///     .disposed(by: myDisposableContainer)
+/// Observable.and(.just(true), .just(true))
+///     .withLatestFrom(someSequence) { $0 ? String(describing: $1) : "" }
+///
 /// ...
 /// ```
 public struct DrXFactoryNamespace<SequenceType, Element> where SequenceType: ObservableType, Element == SequenceType.E {
