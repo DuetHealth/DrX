@@ -19,7 +19,7 @@ public extension DrXNamespace where Element: Equatable {
 
     /// Replaces matching elements of the sequence with nil.
     public func replaceWithNil(_ value: Element) -> Observable<Element?> {
-        return decoratedSequence.map { $0 == value ? nil : value }
+        return decoratedSequence.map { $0 == value ? nil : $0 }
     }
 
 }
