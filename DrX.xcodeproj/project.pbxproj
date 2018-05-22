@@ -19,6 +19,9 @@
 		78D212A2202E3F9F0051B815 /* Observable+BoolSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D212A1202E3F9F0051B815 /* Observable+BoolSpec.swift */; };
 		78D212A4202E40680051B815 /* CovariantSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D212A3202E40680051B815 /* CovariantSpec.swift */; };
 		8DEAF94A0B1F535AA2D04A4A /* Pods_DrXTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10CC92F61A260FE3BF9B5319 /* Pods_DrXTests.framework */; };
+		949D2C0D20A5D8A100A8C1A7 /* Observable+KeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949D2C0C20A5D8A100A8C1A7 /* Observable+KeyPath.swift */; };
+		949D2C0F20A5DAE500A8C1A7 /* DrX+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949D2C0E20A5DAE500A8C1A7 /* DrX+UITableView.swift */; };
+		949D2C1120A5DB8500A8C1A7 /* Do.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949D2C1020A5DB8500A8C1A7 /* Do.swift */; };
 		94CC37B32031E9B40018C210 /* DrX+UIPreviewing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CC37B22031E9B40018C210 /* DrX+UIPreviewing.swift */; };
 		B54E9C6F1FC356B9000301C6 /* DrX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54E9C651FC356B9000301C6 /* DrX.framework */; };
 		B5AF5B4A1FCCCA04005265F4 /* DrX.h in Headers */ = {isa = PBXBuildFile; fileRef = B5AF5B491FCCCA04005265F4 /* DrX.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -51,6 +54,9 @@
 		78D212A1202E3F9F0051B815 /* Observable+BoolSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+BoolSpec.swift"; sourceTree = "<group>"; };
 		78D212A3202E40680051B815 /* CovariantSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovariantSpec.swift; sourceTree = "<group>"; };
 		78D212BA2031DBD00051B815 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		949D2C0C20A5D8A100A8C1A7 /* Observable+KeyPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+KeyPath.swift"; sourceTree = "<group>"; };
+		949D2C0E20A5DAE500A8C1A7 /* DrX+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DrX+UITableView.swift"; sourceTree = "<group>"; };
+		949D2C1020A5DB8500A8C1A7 /* Do.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Do.swift; sourceTree = "<group>"; };
 		94CC37B22031E9B40018C210 /* DrX+UIPreviewing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DrX+UIPreviewing.swift"; sourceTree = "<group>"; };
 		B54E9C651FC356B9000301C6 /* DrX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DrX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B54E9C691FC356B9000301C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -101,9 +107,11 @@
 			isa = PBXGroup;
 			children = (
 				78D21291202E28550051B815 /* Covariance.swift */,
+				949D2C1020A5DB8500A8C1A7 /* Do.swift */,
 				78D2128D202E246C0051B815 /* DrXNamespace.swift */,
 				78D21295202E376F0051B815 /* EraseElements.swift */,
 				78D2129B202E3CFA0051B815 /* Observable+Bool.swift */,
+				949D2C0C20A5D8A100A8C1A7 /* Observable+KeyPath.swift */,
 				78D21297202E37F40051B815 /* Optional.swift */,
 				78D21293202E37130051B815 /* Replace.swift */,
 				78D21299202E38200051B815 /* Zip.swift */,
@@ -115,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				94CC37B22031E9B40018C210 /* DrX+UIPreviewing.swift */,
+				949D2C0E20A5DAE500A8C1A7 /* DrX+UITableView.swift */,
 			);
 			path = "Cocoa Touch";
 			sourceTree = "<group>";
@@ -213,7 +222,6 @@
 				B54E9C611FC356B9000301C6 /* Frameworks */,
 				B54E9C621FC356B9000301C6 /* Headers */,
 				B54E9C631FC356B9000301C6 /* Resources */,
-				CB74AB6DD54E34E2569C56B4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -233,7 +241,6 @@
 				B54E9C6B1FC356B9000301C6 /* Frameworks */,
 				B54E9C6C1FC356B9000301C6 /* Resources */,
 				547BB0DB7F85A4B15D3C1AE3 /* [CP] Embed Pods Frameworks */,
-				6B07CD676C21A7841BCCD0BA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -252,7 +259,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0910;
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Duet Health";
 				TargetAttributes = {
 					B54E9C641FC356B9000301C6 = {
@@ -363,36 +370,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6B07CD676C21A7841BCCD0BA /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DrXTests/Pods-DrXTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CB74AB6DD54E34E2569C56B4 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DrX/Pods-DrX-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -400,10 +377,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				949D2C0F20A5DAE500A8C1A7 /* DrX+UITableView.swift in Sources */,
 				78D21294202E37130051B815 /* Replace.swift in Sources */,
 				78D2129A202E38200051B815 /* Zip.swift in Sources */,
+				949D2C1120A5DB8500A8C1A7 /* Do.swift in Sources */,
 				78D21296202E376F0051B815 /* EraseElements.swift in Sources */,
 				78D2129C202E3CFA0051B815 /* Observable+Bool.swift in Sources */,
+				949D2C0D20A5D8A100A8C1A7 /* Observable+KeyPath.swift in Sources */,
 				94CC37B32031E9B40018C210 /* DrX+UIPreviewing.swift in Sources */,
 				78D21292202E28550051B815 /* Covariance.swift in Sources */,
 				78D2128E202E246C0051B815 /* DrXNamespace.swift in Sources */,
@@ -446,6 +426,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -453,6 +434,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -506,6 +488,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -513,6 +496,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
