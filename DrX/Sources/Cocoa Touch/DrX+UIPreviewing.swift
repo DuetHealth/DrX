@@ -70,7 +70,7 @@ public extension Reactive where Base: UITableView {
         if let proxy = objc_getAssociatedObject(controller, &previewingDelegateKey) { return proxy as! RxViewControllerPreviewingDelegateProxy }
         let forwardedDelegate: UIViewControllerPreviewingDelegate?
         if controller.conforms(to: UIViewControllerPreviewingDelegate.self) {
-            forwardedDelegate = controller as! UIViewControllerPreviewingDelegate
+            forwardedDelegate = controller as? UIViewControllerPreviewingDelegate
         } else { forwardedDelegate = nil }
         let proxy = RxViewControllerPreviewingDelegateProxy(tableView: base, forwardedDelegate: forwardedDelegate)
         objc_setAssociatedObject(controller, &previewingDelegateKey, proxy, .OBJC_ASSOCIATION_RETAIN)

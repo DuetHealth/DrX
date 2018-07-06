@@ -1,4 +1,3 @@
-
 import Foundation
 import RxSwift
 
@@ -9,4 +8,18 @@ public extension DrXNamespace {
         return decoratedSequence.map { _ in return element }
     }
     
+}
+
+public extension DrXNamespace where Element: Equatable {
+
+    /// Replaces matching elements of the sequence with the given replacement.
+    public func replace(_ value: Element, with replacement: Element) -> Observable<Element> {
+        return decoratedSequence.map { $0 == value ? replacement : $0 }
+    }
+
+    /// Replaces matching elements of the sequence with nil.
+    public func replaceWithNil(_ value: Element) -> Observable<Element?> {
+        return decoratedSequence.map { $0 == value ? nil : $0 }
+    }
+
 }
