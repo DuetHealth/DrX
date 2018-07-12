@@ -22,6 +22,7 @@
 		949D2C0D20A5D8A100A8C1A7 /* Observable+KeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949D2C0C20A5D8A100A8C1A7 /* Observable+KeyPath.swift */; };
 		949D2C0F20A5DAE500A8C1A7 /* DrX+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949D2C0E20A5DAE500A8C1A7 /* DrX+UITableView.swift */; };
 		949D2C1120A5DB8500A8C1A7 /* Do.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949D2C1020A5DB8500A8C1A7 /* Do.swift */; };
+		94B6AF8A20F7C23700E185FC /* Disposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B6AF8920F7C23700E185FC /* Disposable.swift */; };
 		94CC37B32031E9B40018C210 /* DrX+UIPreviewing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CC37B22031E9B40018C210 /* DrX+UIPreviewing.swift */; };
 		B54E9C6F1FC356B9000301C6 /* DrX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54E9C651FC356B9000301C6 /* DrX.framework */; };
 		B5AF5B4A1FCCCA04005265F4 /* DrX.h in Headers */ = {isa = PBXBuildFile; fileRef = B5AF5B491FCCCA04005265F4 /* DrX.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -57,6 +58,7 @@
 		949D2C0C20A5D8A100A8C1A7 /* Observable+KeyPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+KeyPath.swift"; sourceTree = "<group>"; };
 		949D2C0E20A5DAE500A8C1A7 /* DrX+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DrX+UITableView.swift"; sourceTree = "<group>"; };
 		949D2C1020A5DB8500A8C1A7 /* Do.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Do.swift; sourceTree = "<group>"; };
+		94B6AF8920F7C23700E185FC /* Disposable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disposable.swift; sourceTree = "<group>"; };
 		94CC37B22031E9B40018C210 /* DrX+UIPreviewing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DrX+UIPreviewing.swift"; sourceTree = "<group>"; };
 		B54E9C651FC356B9000301C6 /* DrX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DrX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B54E9C691FC356B9000301C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				78D21297202E37F40051B815 /* Optional.swift */,
 				78D21293202E37130051B815 /* Replace.swift */,
 				78D21299202E38200051B815 /* Zip.swift */,
+				94B6AF8920F7C23700E185FC /* Disposable.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				949D2C0F20A5DAE500A8C1A7 /* DrX+UITableView.swift in Sources */,
+				94B6AF8A20F7C23700E185FC /* Disposable.swift in Sources */,
 				78D21294202E37130051B815 /* Replace.swift in Sources */,
 				78D2129A202E38200051B815 /* Zip.swift in Sources */,
 				949D2C1120A5DB8500A8C1A7 /* Do.swift in Sources */,
