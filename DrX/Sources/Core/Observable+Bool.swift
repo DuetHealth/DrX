@@ -13,6 +13,16 @@ public extension DrXFactoryNamespace where Element == Bool {
             .map { $0.contains(true) }
     }
 
+    public func and(_ sources: [SequenceType]) -> Observable<Bool> {
+        return base.combineLatest(sources)
+            .map { !$0.contains(false) }
+    }
+
+    public func or(_ sources: [SequenceType]) -> Observable<Bool> {
+        return base.combineLatest(sources)
+            .map { $0.contains(true) }
+    }
+
 }
 
 public extension DrXNamespace where Element == Bool {
