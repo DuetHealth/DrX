@@ -19,6 +19,11 @@
 		78D212A2202E3F9F0051B815 /* Observable+BoolSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D212A1202E3F9F0051B815 /* Observable+BoolSpec.swift */; };
 		78D212A4202E40680051B815 /* CovariantSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D212A3202E40680051B815 /* CovariantSpec.swift */; };
 		8DEAF94A0B1F535AA2D04A4A /* Pods_DrXTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10CC92F61A260FE3BF9B5319 /* Pods_DrXTests.framework */; };
+		94192B72219610440010C208 /* DrXCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94192B71219610440010C208 /* DrXCollectionReusableView.swift */; };
+		94192B752196106B0010C208 /* DrXCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94192B742196106B0010C208 /* DrXCollectionViewCell.swift */; };
+		94192B77219610BD0010C208 /* DrXReuse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94192B76219610BD0010C208 /* DrXReuse.swift */; };
+		94192B79219611320010C208 /* DrXTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94192B78219611320010C208 /* DrXTableViewCell.swift */; };
+		94192B7B219611890010C208 /* DrXTableViewHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94192B7A219611890010C208 /* DrXTableViewHeaderFooterView.swift */; };
 		949D2C0D20A5D8A100A8C1A7 /* Observable+KeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949D2C0C20A5D8A100A8C1A7 /* Observable+KeyPath.swift */; };
 		949D2C0F20A5DAE500A8C1A7 /* DrX+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949D2C0E20A5DAE500A8C1A7 /* DrX+UITableView.swift */; };
 		949D2C1120A5DB8500A8C1A7 /* Do.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949D2C1020A5DB8500A8C1A7 /* Do.swift */; };
@@ -55,6 +60,11 @@
 		78D212A1202E3F9F0051B815 /* Observable+BoolSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+BoolSpec.swift"; sourceTree = "<group>"; };
 		78D212A3202E40680051B815 /* CovariantSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovariantSpec.swift; sourceTree = "<group>"; };
 		78D212BA2031DBD00051B815 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		94192B71219610440010C208 /* DrXCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrXCollectionReusableView.swift; sourceTree = "<group>"; };
+		94192B742196106B0010C208 /* DrXCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrXCollectionViewCell.swift; sourceTree = "<group>"; };
+		94192B76219610BD0010C208 /* DrXReuse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrXReuse.swift; sourceTree = "<group>"; };
+		94192B78219611320010C208 /* DrXTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrXTableViewCell.swift; sourceTree = "<group>"; };
+		94192B7A219611890010C208 /* DrXTableViewHeaderFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrXTableViewHeaderFooterView.swift; sourceTree = "<group>"; };
 		949D2C0C20A5D8A100A8C1A7 /* Observable+KeyPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+KeyPath.swift"; sourceTree = "<group>"; };
 		949D2C0E20A5DAE500A8C1A7 /* DrX+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DrX+UITableView.swift"; sourceTree = "<group>"; };
 		949D2C1020A5DB8500A8C1A7 /* Do.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Do.swift; sourceTree = "<group>"; };
@@ -105,6 +115,18 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		94192B73219610560010C208 /* Reusable Views */ = {
+			isa = PBXGroup;
+			children = (
+				94192B71219610440010C208 /* DrXCollectionReusableView.swift */,
+				94192B742196106B0010C208 /* DrXCollectionViewCell.swift */,
+				94192B76219610BD0010C208 /* DrXReuse.swift */,
+				94192B78219611320010C208 /* DrXTableViewCell.swift */,
+				94192B7A219611890010C208 /* DrXTableViewHeaderFooterView.swift */,
+			);
+			path = "Reusable Views";
+			sourceTree = "<group>";
+		};
 		94CC37B02031E96E0018C210 /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +147,7 @@
 		94CC37B12031E9790018C210 /* Cocoa Touch */ = {
 			isa = PBXGroup;
 			children = (
+				94192B73219610560010C208 /* Reusable Views */,
 				94CC37B22031E9B40018C210 /* DrX+UIPreviewing.swift */,
 				949D2C0E20A5DAE500A8C1A7 /* DrX+UITableView.swift */,
 			);
@@ -381,6 +404,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				949D2C0F20A5DAE500A8C1A7 /* DrX+UITableView.swift in Sources */,
+				94192B72219610440010C208 /* DrXCollectionReusableView.swift in Sources */,
+				94192B79219611320010C208 /* DrXTableViewCell.swift in Sources */,
 				94B6AF8A20F7C23700E185FC /* Disposable.swift in Sources */,
 				78D21294202E37130051B815 /* Replace.swift in Sources */,
 				78D2129A202E38200051B815 /* Zip.swift in Sources */,
@@ -388,7 +413,10 @@
 				78D21296202E376F0051B815 /* EraseElements.swift in Sources */,
 				78D2129C202E3CFA0051B815 /* Observable+Bool.swift in Sources */,
 				949D2C0D20A5D8A100A8C1A7 /* Observable+KeyPath.swift in Sources */,
+				94192B7B219611890010C208 /* DrXTableViewHeaderFooterView.swift in Sources */,
 				94CC37B32031E9B40018C210 /* DrX+UIPreviewing.swift in Sources */,
+				94192B77219610BD0010C208 /* DrXReuse.swift in Sources */,
+				94192B752196106B0010C208 /* DrXCollectionViewCell.swift in Sources */,
 				78D21292202E28550051B815 /* Covariance.swift in Sources */,
 				78D2128E202E246C0051B815 /* DrXNamespace.swift in Sources */,
 				78D21298202E37F40051B815 /* Optional.swift in Sources */,
