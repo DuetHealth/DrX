@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/DuetHealth/DrX.svg?branch=master)](https://travis-ci.org/DuetHealth/DrX)
+
 # DrX
 
 DrX is a collection of convenience extensions of RxSwift which add new operators for concisely handling common patterns and/or scenarios. In addition to an agnostic core, DrX also supports iOS RxCocoa.
