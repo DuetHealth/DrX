@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                  = 'DrX'
-  s.version               = '1.2.0'
+  s.version               = '2.0.0'
   s.summary               = "The Rx doctor is in the house, curing all your ailments with simple-yet-expressive operators and extensions. Includes Cocoa Touch support!"
   s.description           = "DrX is a collection of convenience extensions of RxSwift which add new operators for concisely handling common patterns and/or scenarios. In addition to an agnostic core, DrX also supports iOS RxCocoa."
   s.license               = { type: 'MIT', file: 'LICENSE' }
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.default_subspec       = 'Core'
   s.requires_arc          = true
   s.ios.deployment_target = '8.0'
-  s.swift_version         = '4.1'
+  s.swift_version         = '4.2'
 
   s.subspec 'Core' do |core|
     core.source_files = "DrX/Sources/Core/**/*.{h,m,swift}"
