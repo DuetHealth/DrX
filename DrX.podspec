@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.default_subspec       = 'Core'
   s.requires_arc          = true
   s.ios.deployment_target = '8.0'
-  s.swift_version         = '4.1'
+  s.swift_version         = '4.2'
 
   s.subspec 'Core' do |core|
     core.source_files = "DrX/Sources/Core/**/*.{h,m,swift}"
