@@ -1,15 +1,15 @@
 language: objective-c  #1
 osx_image: xcode9.2 #2
-xcode_workspace: DrX.xcworkspace #3
+xcode_project: DrX.xcodeproj #3
 xcode_scheme: DrX #4
 xcode_sdk: iphonesimulator11.2
 
 before_install:
-  - gem install cocoapods -v '1.4.0'
+  - brew install carthage
 
 install:
-  - pod install --repo-update
+  - carthage update
 
 script: 
-  - xcodebuild -workspace DrX.xcworkspace -scheme DrX -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty
-  - xcodebuild test -workspace DrX.xcworkspace -scheme DrX -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.0' -sdk iphonesimulator
+  - xcodebuild -project DrX.xcodeproj -scheme DrX -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty
+  - xcodebuild test -project DrX.xcodeproj -scheme DrX -destination 'platform=iOS Simulator,name=iPhone 6,OS=12.1' -sdk iphonesimulator

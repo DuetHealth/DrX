@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C835CFF8F5F9CF2BBAA2FD9 /* Pods_DrX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D0CA8BB6555F5F8AFC5E7EA /* Pods_DrX.framework */; };
 		78D2128E202E246C0051B815 /* DrXNamespace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D2128D202E246C0051B815 /* DrXNamespace.swift */; };
 		78D21292202E28550051B815 /* Covariance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D21291202E28550051B815 /* Covariance.swift */; };
 		78D21294202E37130051B815 /* Replace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D21293202E37130051B815 /* Replace.swift */; };
@@ -18,7 +17,6 @@
 		78D212A0202E3F3B0051B815 /* ZipSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D2129F202E3F3B0051B815 /* ZipSpec.swift */; };
 		78D212A2202E3F9F0051B815 /* Observable+BoolSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D212A1202E3F9F0051B815 /* Observable+BoolSpec.swift */; };
 		78D212A4202E40680051B815 /* CovariantSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D212A3202E40680051B815 /* CovariantSpec.swift */; };
-		8DEAF94A0B1F535AA2D04A4A /* Pods_DrXTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10CC92F61A260FE3BF9B5319 /* Pods_DrXTests.framework */; };
 		94192B72219610440010C208 /* DrXCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94192B71219610440010C208 /* DrXCollectionReusableView.swift */; };
 		94192B752196106B0010C208 /* DrXCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94192B742196106B0010C208 /* DrXCollectionViewCell.swift */; };
 		94192B77219610BD0010C208 /* DrXReuse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94192B76219610BD0010C208 /* DrXReuse.swift */; };
@@ -30,6 +28,18 @@
 		94B6AF8A20F7C23700E185FC /* Disposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B6AF8920F7C23700E185FC /* Disposable.swift */; };
 		94CC37B32031E9B40018C210 /* DrX+UIPreviewing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CC37B22031E9B40018C210 /* DrX+UIPreviewing.swift */; };
 		B54E9C6F1FC356B9000301C6 /* DrX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54E9C651FC356B9000301C6 /* DrX.framework */; };
+		B568B3DE21F69E4D00A48166 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B568B3DC21F69E4D00A48166 /* Quick.framework */; };
+		B568B3DF21F69E4D00A48166 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B568B3DD21F69E4D00A48166 /* Nimble.framework */; };
+		B568B3E121F69E6800A48166 /* Quick.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = B568B3DC21F69E4D00A48166 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B568B3E221F69E6D00A48166 /* Nimble.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = B568B3DD21F69E4D00A48166 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B568B3E521F69E9300A48166 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B568B3E321F69E9300A48166 /* RxSwift.framework */; };
+		B568B3E621F69E9300A48166 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B568B3E421F69E9300A48166 /* RxCocoa.framework */; };
+		B568B3E821F69EAD00A48166 /* RxCocoa.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = B568B3E421F69E9300A48166 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B568B3E921F69EAD00A48166 /* RxSwift.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = B568B3E321F69E9300A48166 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B568B3EA21F69FC700A48166 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B568B3E421F69E9300A48166 /* RxCocoa.framework */; };
+		B568B3EB21F69FC700A48166 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B568B3E321F69E9300A48166 /* RxSwift.framework */; };
+		B568B3EC21F69FD500A48166 /* RxCocoa.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = B568B3E421F69E9300A48166 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B568B3ED21F69FD500A48166 /* RxSwift.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = B568B3E321F69E9300A48166 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B5AF5B4A1FCCCA04005265F4 /* DrX.h in Headers */ = {isa = PBXBuildFile; fileRef = B5AF5B491FCCCA04005265F4 /* DrX.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -43,12 +53,36 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B568B3E021F69E5600A48166 /* Copy Carthage Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B568B3EC21F69FD500A48166 /* RxCocoa.framework in Copy Carthage Frameworks */,
+				B568B3ED21F69FD500A48166 /* RxSwift.framework in Copy Carthage Frameworks */,
+				B568B3E221F69E6D00A48166 /* Nimble.framework in Copy Carthage Frameworks */,
+				B568B3E121F69E6800A48166 /* Quick.framework in Copy Carthage Frameworks */,
+			);
+			name = "Copy Carthage Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B568B3E721F69E9900A48166 /* Copy Carthage Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B568B3E821F69EAD00A48166 /* RxCocoa.framework in Copy Carthage Frameworks */,
+				B568B3E921F69EAD00A48166 /* RxSwift.framework in Copy Carthage Frameworks */,
+			);
+			name = "Copy Carthage Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		10CC92F61A260FE3BF9B5319 /* Pods_DrXTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrXTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		25A9CA675ABF4F1B4B52A8BE /* Pods-DrX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrX.release.xcconfig"; path = "Pods/Target Support Files/Pods-DrX/Pods-DrX.release.xcconfig"; sourceTree = "<group>"; };
-		2D0CA8BB6555F5F8AFC5E7EA /* Pods_DrX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4FF742C3CB0C1D2A44BA70F0 /* Pods-DrX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DrX/Pods-DrX.debug.xcconfig"; sourceTree = "<group>"; };
-		5CFB4704329271E3109B071F /* Pods-DrXTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrXTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DrXTests/Pods-DrXTests.debug.xcconfig"; sourceTree = "<group>"; };
 		78D2128D202E246C0051B815 /* DrXNamespace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrXNamespace.swift; sourceTree = "<group>"; };
 		78D21291202E28550051B815 /* Covariance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covariance.swift; sourceTree = "<group>"; };
 		78D21293202E37130051B815 /* Replace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Replace.swift; sourceTree = "<group>"; };
@@ -74,8 +108,11 @@
 		B54E9C691FC356B9000301C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B54E9C6E1FC356B9000301C6 /* DrXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B54E9C751FC356B9000301C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B568B3DC21F69E4D00A48166 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		B568B3DD21F69E4D00A48166 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		B568B3E321F69E9300A48166 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		B568B3E421F69E9300A48166 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		B5AF5B491FCCCA04005265F4 /* DrX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrX.h; sourceTree = "<group>"; };
-		F33F303580C0E9B4090BB418 /* Pods-DrXTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrXTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DrXTests/Pods-DrXTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +120,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C835CFF8F5F9CF2BBAA2FD9 /* Pods_DrX.framework in Frameworks */,
+				B568B3E521F69E9300A48166 /* RxSwift.framework in Frameworks */,
+				B568B3E621F69E9300A48166 /* RxCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +130,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B54E9C6F1FC356B9000301C6 /* DrX.framework in Frameworks */,
-				8DEAF94A0B1F535AA2D04A4A /* Pods_DrXTests.framework in Frameworks */,
+				B568B3DE21F69E4D00A48166 /* Quick.framework in Frameworks */,
+				B568B3DF21F69E4D00A48166 /* Nimble.framework in Frameworks */,
+				B568B3EA21F69FC700A48166 /* RxCocoa.framework in Frameworks */,
+				B568B3EB21F69FC700A48166 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,8 +202,7 @@
 				B54E9C671FC356B9000301C6 /* DrX */,
 				B54E9C721FC356B9000301C6 /* DrXTests */,
 				B54E9C661FC356B9000301C6 /* Products */,
-				E4FD55F9843C4EC79A12FDC4 /* Pods */,
-				C63C01815E02BABCE6FC9067 /* Frameworks */,
+				B568B3DB21F69E4D00A48166 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -195,6 +235,17 @@
 			path = DrXTests;
 			sourceTree = "<group>";
 		};
+		B568B3DB21F69E4D00A48166 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B568B3E421F69E9300A48166 /* RxCocoa.framework */,
+				B568B3E321F69E9300A48166 /* RxSwift.framework */,
+				B568B3DD21F69E4D00A48166 /* Nimble.framework */,
+				B568B3DC21F69E4D00A48166 /* Quick.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B5AF5B471FCCC7A1005265F4 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,26 +254,6 @@
 				94CC37B12031E9790018C210 /* Cocoa Touch */,
 			);
 			path = Sources;
-			sourceTree = "<group>";
-		};
-		C63C01815E02BABCE6FC9067 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2D0CA8BB6555F5F8AFC5E7EA /* Pods_DrX.framework */,
-				10CC92F61A260FE3BF9B5319 /* Pods_DrXTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E4FD55F9843C4EC79A12FDC4 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				4FF742C3CB0C1D2A44BA70F0 /* Pods-DrX.debug.xcconfig */,
-				25A9CA675ABF4F1B4B52A8BE /* Pods-DrX.release.xcconfig */,
-				5CFB4704329271E3109B071F /* Pods-DrXTests.debug.xcconfig */,
-				F33F303580C0E9B4090BB418 /* Pods-DrXTests.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,11 +274,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B54E9C791FC356B9000301C6 /* Build configuration list for PBXNativeTarget "DrX" */;
 			buildPhases = (
-				623A74480FA877410B4BC40E /* [CP] Check Pods Manifest.lock */,
 				B54E9C601FC356B9000301C6 /* Sources */,
 				B54E9C611FC356B9000301C6 /* Frameworks */,
 				B54E9C621FC356B9000301C6 /* Headers */,
 				B54E9C631FC356B9000301C6 /* Resources */,
+				B568B3E721F69E9900A48166 /* Copy Carthage Frameworks */,
 			);
 			buildRules = (
 			);
@@ -262,11 +293,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B54E9C7C1FC356B9000301C6 /* Build configuration list for PBXNativeTarget "DrXTests" */;
 			buildPhases = (
-				4A62144CB5F06666A9A5B5F9 /* [CP] Check Pods Manifest.lock */,
 				B54E9C6A1FC356B9000301C6 /* Sources */,
 				B54E9C6B1FC356B9000301C6 /* Frameworks */,
 				B54E9C6C1FC356B9000301C6 /* Resources */,
-				547BB0DB7F85A4B15D3C1AE3 /* [CP] Embed Pods Frameworks */,
+				B568B3E021F69E5600A48166 /* Copy Carthage Frameworks */,
 			);
 			buildRules = (
 			);
@@ -334,69 +364,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		4A62144CB5F06666A9A5B5F9 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DrXTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		547BB0DB7F85A4B15D3C1AE3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-DrXTests/Pods-DrXTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
-				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DrXTests/Pods-DrXTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		623A74480FA877410B4BC40E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DrX-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B54E9C601FC356B9000301C6 /* Sources */ = {
@@ -563,7 +530,6 @@
 		};
 		B54E9C7A1FC356B9000301C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4FF742C3CB0C1D2A44BA70F0 /* Pods-DrX.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -573,6 +539,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "DrX/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -588,7 +558,6 @@
 		};
 		B54E9C7B1FC356B9000301C6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 25A9CA675ABF4F1B4B52A8BE /* Pods-DrX.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -598,6 +567,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "DrX/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -612,11 +585,14 @@
 		};
 		B54E9C7D1FC356B9000301C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5CFB4704329271E3109B071F /* Pods-DrXTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 75Y586SA36;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "DrXTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.duet.DrXTests;
@@ -628,11 +604,14 @@
 		};
 		B54E9C7E1FC356B9000301C6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F33F303580C0E9B4090BB418 /* Pods-DrXTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 75Y586SA36;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "DrXTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.duet.DrXTests;
