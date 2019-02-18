@@ -34,8 +34,6 @@
 		B568B3E221F69E6D00A48166 /* Nimble.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = B568B3DD21F69E4D00A48166 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B568B3E521F69E9300A48166 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B568B3E321F69E9300A48166 /* RxSwift.framework */; };
 		B568B3E621F69E9300A48166 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B568B3E421F69E9300A48166 /* RxCocoa.framework */; };
-		B568B3E821F69EAD00A48166 /* RxCocoa.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = B568B3E421F69E9300A48166 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B568B3E921F69EAD00A48166 /* RxSwift.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = B568B3E321F69E9300A48166 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B568B3EA21F69FC700A48166 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B568B3E421F69E9300A48166 /* RxCocoa.framework */; };
 		B568B3EB21F69FC700A48166 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B568B3E321F69E9300A48166 /* RxSwift.framework */; };
 		B568B3EC21F69FD500A48166 /* RxCocoa.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = B568B3E421F69E9300A48166 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -64,18 +62,6 @@
 				B568B3ED21F69FD500A48166 /* RxSwift.framework in Copy Carthage Frameworks */,
 				B568B3E221F69E6D00A48166 /* Nimble.framework in Copy Carthage Frameworks */,
 				B568B3E121F69E6800A48166 /* Quick.framework in Copy Carthage Frameworks */,
-			);
-			name = "Copy Carthage Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B568B3E721F69E9900A48166 /* Copy Carthage Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				B568B3E821F69EAD00A48166 /* RxCocoa.framework in Copy Carthage Frameworks */,
-				B568B3E921F69EAD00A48166 /* RxSwift.framework in Copy Carthage Frameworks */,
 			);
 			name = "Copy Carthage Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,7 +264,6 @@
 				B54E9C611FC356B9000301C6 /* Frameworks */,
 				B54E9C621FC356B9000301C6 /* Headers */,
 				B54E9C631FC356B9000301C6 /* Resources */,
-				B568B3E721F69E9900A48166 /* Copy Carthage Frameworks */,
 			);
 			buildRules = (
 			);
