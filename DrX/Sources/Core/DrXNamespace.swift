@@ -55,11 +55,11 @@ public protocol DrXCompatible: ObservableType {
 public extension ObservableType {
     typealias CompatibleType = Self
 
-    public static var drx: DrXFactoryNamespace<Self, E> {
+    static var drx: DrXFactoryNamespace<Self, E> {
         return DrXFactoryNamespace(type: Self.self)
     }
 
-    public var drx: DrXNamespace<Self, E> {
+    var drx: DrXNamespace<Self, E> {
         return DrXNamespace(sequence: self)
     }
 

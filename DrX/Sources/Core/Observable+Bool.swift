@@ -3,22 +3,22 @@ import RxSwift
 
 public extension DrXFactoryNamespace where Element == Bool {
 
-    public func and(_ sources: SequenceType...) -> Observable<Bool> {
+    func and(_ sources: SequenceType...) -> Observable<Bool> {
         return base.combineLatest(sources)
             .map { !$0.contains(false) }
     }
 
-    public func or(_ sources: SequenceType...) -> Observable<Bool> {
+    func or(_ sources: SequenceType...) -> Observable<Bool> {
         return base.combineLatest(sources)
             .map { $0.contains(true) }
     }
 
-    public func and(_ sources: [SequenceType]) -> Observable<Bool> {
+    func and(_ sources: [SequenceType]) -> Observable<Bool> {
         return base.combineLatest(sources)
             .map { !$0.contains(false) }
     }
 
-    public func or(_ sources: [SequenceType]) -> Observable<Bool> {
+    func or(_ sources: [SequenceType]) -> Observable<Bool> {
         return base.combineLatest(sources)
             .map { $0.contains(true) }
     }
@@ -28,19 +28,19 @@ public extension DrXFactoryNamespace where Element == Bool {
 public extension DrXNamespace where Element == Bool {
 
     /// Emits only when the element is `true`.
-    public func whenTrue() -> Observable<Element> {
+    func whenTrue() -> Observable<Element> {
         return decoratedSequence.filter { $0 }
     }
 
     /// Emits only when the element is `false`.
-    public func whenFalse() -> Observable<Element> {
+    func whenFalse() -> Observable<Element> {
         return decoratedSequence.filter { !$0 }
     }
 
     /// Emits the given value when the source emits `true`.
     ///
     /// - Parameter value: the constant value to emit.
-    public func whenTrue<R>(send value: R) -> Observable<R> {
+    func whenTrue<R>(send value: R) -> Observable<R> {
         return decoratedSequence.filter { $0 }
             .drx.replace(lifting: value)
     }
@@ -48,7 +48,7 @@ public extension DrXNamespace where Element == Bool {
     /// Emits the given value when the source emits `false`.
     ///
     /// - Parameter value: the constant value to emit.
-    public func whenFalse<R>(send value: R) -> Observable<R> {
+    func whenFalse<R>(send value: R) -> Observable<R> {
         return decoratedSequence.filter { !$0 }
             .drx.replace(lifting: value)
     }
@@ -59,7 +59,7 @@ public extension DrXNamespace where Element == Bool {
     /// - Parameters:
     ///   - satisfied: the constant value to emit when `true`.
     ///   - unsatisfied: the constant value to emit when `false`.
-    public func ifTrue<R>(then satisfied: R, else unsatisfied: R) -> Observable<R> {
+    func ifTrue<R>(then satisfied: R, else unsatisfied: R) -> Observable<R> {
         return decoratedSequence.map { $0 ? satisfied : unsatisfied }
     }
 
@@ -68,7 +68,7 @@ public extension DrXNamespace where Element == Bool {
     /// - Parameters:
     ///   - satisfied: the constant value to emit when `false`.
     ///   - unsatisfied: the constant value to emit when `true`.
-    public func ifFalse<R>(then satisfied: R, else unsatisfied: R) -> Observable<R> {
+    func ifFalse<R>(then satisfied: R, else unsatisfied: R) -> Observable<R> {
         return ifTrue(then: unsatisfied, else: satisfied)
     }
 
