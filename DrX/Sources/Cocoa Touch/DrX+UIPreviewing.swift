@@ -66,7 +66,7 @@ fileprivate var previewingDelegateKey = UInt8.max
 public extension Reactive where Base: UITableView {
 
     @available(iOS 9.0, *)
-    public func previewingDelegate(registrant controller: UIViewController) -> RxViewControllerPreviewingDelegateProxy {
+    func previewingDelegate(registrant controller: UIViewController) -> RxViewControllerPreviewingDelegateProxy {
         if let proxy = objc_getAssociatedObject(controller, &previewingDelegateKey) { return proxy as! RxViewControllerPreviewingDelegateProxy }
         let forwardedDelegate: UIViewControllerPreviewingDelegate?
         if controller.conforms(to: UIViewControllerPreviewingDelegate.self) {

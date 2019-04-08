@@ -40,7 +40,7 @@ public extension DrXNamespace {
 
     /// Invokes an action for the specified events in the observable sequence. The action is
     /// independent from the elements of the sequence.
-    public func `do`(on events: SequenceEvent = SequenceEvent.all, _ behavior: @escaping () -> ()) -> Observable<Element> {
+    func `do`(on events: SequenceEvent = SequenceEvent.all, _ behavior: @escaping () -> ()) -> Observable<Element> {
         return decoratedSequence.do(
             onNext: events.contains(.next) ? { _ in behavior() } : nil,
             onError: events.contains(.error) ? { _ in behavior() } : nil,

@@ -1,8 +1,8 @@
 language: objective-c  #1
-osx_image: xcode10.1 #2
+osx_image: xcode10.2 #2
 xcode_project: DrX.xcodeproj #3
 xcode_scheme: DrX #4
-xcode_sdk: iphonesimulator12.1
+xcode_sdk: iphonesimulator12.2
 
 before_install:
   - brew install carthage
@@ -12,4 +12,4 @@ install:
 
 script: 
   - xcodebuild -project DrX.xcodeproj -scheme DrX -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty
-  - xcodebuild test -project DrX.xcodeproj -scheme DrX -destination 'platform=iOS Simulator,name=iPhone 6,OS=12.1' -sdk iphonesimulator
+  - xcodebuild test -project DrX.xcodeproj -scheme DrX -destination 'platform=iOS Simulator,name=iPhone 6,OS=12.2' -sdk iphonesimulator

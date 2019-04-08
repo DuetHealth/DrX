@@ -8,7 +8,7 @@ public extension Disposable {
     /// Retains the resources associated with a subscription until the argument object is deallocated.
     ///
     /// - Parameter object: the object to which this disposable's lifetime is tethered.
-    public func withLifetime(of object: AnyObject) {
+    func withLifetime(of object: AnyObject) {
         if let bag = objc_getAssociatedObject(object, &disposableKey) as? DisposeBag {
             bag.insert(self)
             return
