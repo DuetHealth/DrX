@@ -12,7 +12,7 @@ import RxSwift
 ///     .disposed(by: myDisposableContainer)
 /// ...
 /// ```
-public struct DrXNamespace<SequenceType, Element> where SequenceType: ObservableType, Element == SequenceType.E {
+public struct DrXNamespace<SequenceType, Element> where SequenceType: ObservableType, Element == SequenceType.Element {
 
     internal let decoratedSequence: SequenceType
 
@@ -33,7 +33,7 @@ public struct DrXNamespace<SequenceType, Element> where SequenceType: Observable
 ///
 /// ...
 /// ```
-public struct DrXFactoryNamespace<SequenceType, Element> where SequenceType: ObservableType, Element == SequenceType.E {
+public struct DrXFactoryNamespace<SequenceType, Element> where SequenceType: ObservableType, Element == SequenceType.Element {
 
     internal let base: SequenceType.Type
 
@@ -46,20 +46,20 @@ public struct DrXFactoryNamespace<SequenceType, Element> where SequenceType: Obs
 public protocol DrXCompatible: ObservableType {
     associatedtype CompatibleType
 
-    static var drx: DrXFactoryNamespace<Self, Self.E> { get }
+    static var drx: DrXFactoryNamespace<Self, Self.Element> { get }
 
-    var drx: DrXNamespace<Self, Self.E> { get }
+    var drx: DrXNamespace<Self, Self.Element> { get }
 
 }
 
 public extension ObservableType {
     typealias CompatibleType = Self
 
-    static var drx: DrXFactoryNamespace<Self, E> {
+    static var drx: DrXFactoryNamespace<Self, Element> {
         return DrXFactoryNamespace(type: Self.self)
     }
 
-    var drx: DrXNamespace<Self, E> {
+    var drx: DrXNamespace<Self, Element> {
         return DrXNamespace(sequence: self)
     }
 
