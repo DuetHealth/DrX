@@ -1,3 +1,4 @@
+#if canImport(UIKit)
 import Foundation
 import RxCocoa
 import RxSwift
@@ -16,3 +17,4 @@ public extension Reactive where Base: UITableView {
     }
 
 }
+#endif

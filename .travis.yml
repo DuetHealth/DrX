@@ -6,6 +6,7 @@ xcode_sdk: iphonesimulator13.3
 
 before_install:
   - pod lib lint
+  - swift build
   - brew install carthage
 
 install:

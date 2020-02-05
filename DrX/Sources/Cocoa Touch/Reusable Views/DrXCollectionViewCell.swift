@@ -1,3 +1,4 @@
+#if canImport(UIKit)
 import Foundation
 import RxSwift
 import UIKit
@@ -16,3 +17,4 @@ open class DrXCollectionViewCell: UICollectionViewCell, DrXReuse {
     }
     
 }
+#endif
