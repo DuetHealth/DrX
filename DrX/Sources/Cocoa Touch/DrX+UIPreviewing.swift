@@ -35,7 +35,7 @@ public class RxViewControllerPreviewingDelegateProxy: NSObject, UIViewController
             .map { $0! }
     }
 
-    public func pop<O: ObservableType, V: UIViewController>(_ source: O) -> (_ commitLogic: @escaping (V) -> ()) -> Disposable where O.E == V {
+    public func pop<O: ObservableType, V: UIViewController>(_ source: O) -> (_ commitLogic: @escaping (V) -> ()) -> Disposable where O.Element == V {
         return { [unowned self] commitLogic in
             self.handlers[String(describing: V.self)] = { (controller: UIViewController) in
                 commitLogic(controller as! V)

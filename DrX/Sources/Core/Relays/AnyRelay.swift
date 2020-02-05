@@ -19,20 +19,20 @@ public struct AnyRelay<Element>: RelayType {
     private let subscribeClosure: (AnyObserver<Element>) -> Disposable
     private let acceptClosure: (Element) -> ()
     
-    public init<R: RelayType>(_ relay: R) where R.E == Element {
+    public init<R: RelayType>(_ relay: R) where R.Element == Element {
         base = relay
         asObserverClosure = relay.asObserver
         acceptClosure = relay.accept
         subscribeClosure = relay.subscribe
     }
     
-    public init<O: ObservableConvertibleType>(_ property: O, accept: @escaping (Element) -> ()) where O.E == Element {
+    public init<O: ObservableConvertibleType>(_ property: O, accept: @escaping (Element) -> ()) where O.Element == Element {
         base = property
         asObserverClosure = {
             AnyObserver { event in
                 switch event {
                 case .next(let next): accept(next)
-                case .error(let error): break // TODO : fatalError("Binding error to relay: \(error)")
+                case .error(_): break // TODO : fatalError("Binding error to relay: \(error)")
                 case .completed: return
                 }
             }
@@ -49,7 +49,7 @@ public struct AnyRelay<Element>: RelayType {
         acceptClosure(event)
     }
     
-    public func subscribe<O: ObserverType>(_ observer: O) -> Disposable where O.E == Element {
+    public func subscribe<O: ObserverType>(_ observer: O) -> Disposable where O.Element == Element {
         return subscribeClosure(AnyObserver(observer))
     }
     

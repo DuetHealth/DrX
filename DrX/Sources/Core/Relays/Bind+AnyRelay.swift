@@ -12,11 +12,11 @@ import RxSwift
 
 public extension ObservableType {
     
-    public func bind(to relay: AnyRelay<E>) -> Disposable {
+    func bind(to relay: AnyRelay<Element>) -> Disposable {
         return bind(to: relay.asObserver())
     }
     
-    public func bind(to relay: AnyRelay<E?>) -> Disposable {
+    func bind(to relay: AnyRelay<Element?>) -> Disposable {
         return bind(to: relay.asObserver())
     }
     
