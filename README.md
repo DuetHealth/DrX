@@ -9,11 +9,11 @@ DrX is a collection of convenience extensions of RxSwift which add new operators
 
 ### Installation
 
-Cocoapods: `pod 'DrX', '~> 2.0'`. See [DrX.podspec](DrX.podspec) for more information.
+Cocoapods: `pod 'DrX', '~> 3.0'`. See [DrX.podspec](DrX.podspec) for more information.
 
-Carthage: `github "DuetHealth/DrX" ~> 2.0 && carthage update`
+Carthage: `github "DuetHealth/DrX" ~> 3.0 && carthage update`
 
-Swift Package Manager: `.package(url: "https://github.com/DuetHealth/DrX.git", "2.0.0" ..< "3.0.0")`
+Swift Package Manager: `.package(url: "https://github.com/DuetHealth/DrX.git", "3.0.0" ..< "4.0.0")`
 
 ### Running tests
 
