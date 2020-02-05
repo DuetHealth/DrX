@@ -30,13 +30,15 @@
 		949D2C1120A5DB8500A8C1A7 /* Do.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949D2C1020A5DB8500A8C1A7 /* Do.swift */; };
 		94B6AF8A20F7C23700E185FC /* Disposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B6AF8920F7C23700E185FC /* Disposable.swift */; };
 		94CC37B32031E9B40018C210 /* DrX+UIPreviewing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CC37B22031E9B40018C210 /* DrX+UIPreviewing.swift */; };
+		B503F84823EB11DE00082419 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B578765923EA2DF2004D4E21 /* RxRelay.framework */; };
+		B503F84B23EB126900082419 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B568B3E421F69E9300A48166 /* RxCocoa.framework */; };
+		B503F84D23EB126B00082419 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B568B3E321F69E9300A48166 /* RxSwift.framework */; };
+		B503F84F23EB152600082419 /* RxRelay.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = B578765923EA2DF2004D4E21 /* RxRelay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B54E9C6F1FC356B9000301C6 /* DrX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54E9C651FC356B9000301C6 /* DrX.framework */; };
 		B568B3DE21F69E4D00A48166 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B568B3DC21F69E4D00A48166 /* Quick.framework */; };
 		B568B3DF21F69E4D00A48166 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B568B3DD21F69E4D00A48166 /* Nimble.framework */; };
 		B568B3E121F69E6800A48166 /* Quick.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = B568B3DC21F69E4D00A48166 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B568B3E221F69E6D00A48166 /* Nimble.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = B568B3DD21F69E4D00A48166 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B568B3E521F69E9300A48166 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B568B3E321F69E9300A48166 /* RxSwift.framework */; };
-		B568B3E621F69E9300A48166 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B568B3E421F69E9300A48166 /* RxCocoa.framework */; };
 		B568B3EA21F69FC700A48166 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B568B3E421F69E9300A48166 /* RxCocoa.framework */; };
 		B568B3EB21F69FC700A48166 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B568B3E321F69E9300A48166 /* RxSwift.framework */; };
 		B568B3EC21F69FD500A48166 /* RxCocoa.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = B568B3E421F69E9300A48166 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -61,6 +63,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				B503F84F23EB152600082419 /* RxRelay.framework in Copy Carthage Frameworks */,
 				B568B3EC21F69FD500A48166 /* RxCocoa.framework in Copy Carthage Frameworks */,
 				B568B3ED21F69FD500A48166 /* RxSwift.framework in Copy Carthage Frameworks */,
 				B568B3E221F69E6D00A48166 /* Nimble.framework in Copy Carthage Frameworks */,
@@ -104,6 +107,7 @@
 		B568B3DD21F69E4D00A48166 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		B568B3E321F69E9300A48166 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		B568B3E421F69E9300A48166 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		B578765923EA2DF2004D4E21 /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
 		B5AF5B491FCCCA04005265F4 /* DrX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrX.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,8 +116,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B568B3E521F69E9300A48166 /* RxSwift.framework in Frameworks */,
-				B568B3E621F69E9300A48166 /* RxCocoa.framework in Frameworks */,
+				B503F84B23EB126900082419 /* RxCocoa.framework in Frameworks */,
+				B503F84823EB11DE00082419 /* RxRelay.framework in Frameworks */,
+				B503F84D23EB126B00082419 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +246,7 @@
 		B568B3DB21F69E4D00A48166 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B578765923EA2DF2004D4E21 /* RxRelay.framework */,
 				B568B3E421F69E9300A48166 /* RxCocoa.framework */,
 				B568B3E321F69E9300A48166 /* RxSwift.framework */,
 				B568B3DD21F69E4D00A48166 /* Nimble.framework */,
