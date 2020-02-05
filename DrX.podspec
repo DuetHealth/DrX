@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                  = 'DrX'
-  s.version               = '3.2.0'
+  s.version               = '3.2.1'
   s.summary               = "The Rx doctor is in the house, curing all your ailments with simple-yet-expressive operators and extensions. Includes Cocoa Touch support!"
   s.description           = "DrX is a collection of convenience extensions of RxSwift which add new operators for concisely handling common patterns and/or scenarios. In addition to an agnostic core, DrX also supports iOS RxCocoa."
   s.license               = { type: 'MIT', file: 'LICENSE' }
@@ -22,6 +22,7 @@ Pod::Spec.new do |s|
     touch.dependency 'RxCocoa'
   end
 
+  s.dependency 'RxRelay'
   s.dependency 'RxSwift'
 
 end

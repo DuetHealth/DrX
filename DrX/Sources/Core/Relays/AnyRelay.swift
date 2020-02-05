@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import RxCocoa
+import RxRelay
 import RxSwift
 
 /// Provides a type-erased interface for relays and relay-like types or controls.
@@ -32,7 +32,7 @@ public struct AnyRelay<Element>: RelayType {
             AnyObserver { event in
                 switch event {
                 case .next(let next): accept(next)
-                case .error(_): break // TODO : fatalError("Binding error to relay: \(error)")
+                case .error(let error): fatalError("Binding error to relay: \(error)")
                 case .completed: return
                 }
             }

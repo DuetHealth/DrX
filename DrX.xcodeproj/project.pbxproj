@@ -17,23 +17,23 @@
 		78D212A0202E3F3B0051B815 /* ZipSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D2129F202E3F3B0051B815 /* ZipSpec.swift */; };
 		78D212A2202E3F9F0051B815 /* Observable+BoolSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D212A1202E3F9F0051B815 /* Observable+BoolSpec.swift */; };
 		78D212A4202E40680051B815 /* CovariantSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D212A3202E40680051B815 /* CovariantSpec.swift */; };
-		94192B72219610440010C208 /* DrXCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94192B71219610440010C208 /* DrXCollectionReusableView.swift */; };
-		94192B752196106B0010C208 /* DrXCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94192B742196106B0010C208 /* DrXCollectionViewCell.swift */; };
-		94192B77219610BD0010C208 /* DrXReuse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94192B76219610BD0010C208 /* DrXReuse.swift */; };
-		94192B79219611320010C208 /* DrXTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94192B78219611320010C208 /* DrXTableViewCell.swift */; };
-		94192B7B219611890010C208 /* DrXTableViewHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94192B7A219611890010C208 /* DrXTableViewHeaderFooterView.swift */; };
 		942375D221BAA7D30072B2ED /* RelayType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942375D121BAA7D30072B2ED /* RelayType.swift */; };
 		942375D721BAA8870072B2ED /* AnyRelay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942375D621BAA8870072B2ED /* AnyRelay.swift */; };
 		942375D921BAA9370072B2ED /* Bind+AnyRelay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942375D821BAA9370072B2ED /* Bind+AnyRelay.swift */; };
 		949D2C0D20A5D8A100A8C1A7 /* Observable+KeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949D2C0C20A5D8A100A8C1A7 /* Observable+KeyPath.swift */; };
-		949D2C0F20A5DAE500A8C1A7 /* DrX+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949D2C0E20A5DAE500A8C1A7 /* DrX+UITableView.swift */; };
 		949D2C1120A5DB8500A8C1A7 /* Do.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949D2C1020A5DB8500A8C1A7 /* Do.swift */; };
 		94B6AF8A20F7C23700E185FC /* Disposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B6AF8920F7C23700E185FC /* Disposable.swift */; };
-		94CC37B32031E9B40018C210 /* DrX+UIPreviewing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CC37B22031E9B40018C210 /* DrX+UIPreviewing.swift */; };
 		B503F84823EB11DE00082419 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B578765923EA2DF2004D4E21 /* RxRelay.framework */; };
 		B503F84B23EB126900082419 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B568B3E421F69E9300A48166 /* RxCocoa.framework */; };
 		B503F84D23EB126B00082419 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B568B3E321F69E9300A48166 /* RxSwift.framework */; };
 		B503F84F23EB152600082419 /* RxRelay.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = B578765923EA2DF2004D4E21 /* RxRelay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B503F87223EB50B800082419 /* DrXCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94192B71219610440010C208 /* DrXCollectionReusableView.swift */; };
+		B503F87323EB50B800082419 /* DrXCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94192B742196106B0010C208 /* DrXCollectionViewCell.swift */; };
+		B503F87423EB50B800082419 /* DrXReuse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94192B76219610BD0010C208 /* DrXReuse.swift */; };
+		B503F87523EB50B800082419 /* DrXTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94192B78219611320010C208 /* DrXTableViewCell.swift */; };
+		B503F87623EB50B800082419 /* DrXTableViewHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94192B7A219611890010C208 /* DrXTableViewHeaderFooterView.swift */; };
+		B503F87723EB50B800082419 /* DrX+UIPreviewing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CC37B22031E9B40018C210 /* DrX+UIPreviewing.swift */; };
+		B503F87823EB50B800082419 /* DrX+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949D2C0E20A5DAE500A8C1A7 /* DrX+UITableView.swift */; };
 		B54E9C6F1FC356B9000301C6 /* DrX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54E9C651FC356B9000301C6 /* DrX.framework */; };
 		B568B3DE21F69E4D00A48166 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B568B3DC21F69E4D00A48166 /* Quick.framework */; };
 		B568B3DF21F69E4D00A48166 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B568B3DD21F69E4D00A48166 /* Nimble.framework */; };
@@ -379,26 +379,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				949D2C0F20A5DAE500A8C1A7 /* DrX+UITableView.swift in Sources */,
-				94192B72219610440010C208 /* DrXCollectionReusableView.swift in Sources */,
-				94192B79219611320010C208 /* DrXTableViewCell.swift in Sources */,
 				94B6AF8A20F7C23700E185FC /* Disposable.swift in Sources */,
 				78D21294202E37130051B815 /* Replace.swift in Sources */,
+				B503F87523EB50B800082419 /* DrXTableViewCell.swift in Sources */,
+				B503F87323EB50B800082419 /* DrXCollectionViewCell.swift in Sources */,
 				78D2129A202E38200051B815 /* Zip.swift in Sources */,
 				949D2C1120A5DB8500A8C1A7 /* Do.swift in Sources */,
+				B503F87223EB50B800082419 /* DrXCollectionReusableView.swift in Sources */,
 				78D21296202E376F0051B815 /* EraseElements.swift in Sources */,
 				942375D721BAA8870072B2ED /* AnyRelay.swift in Sources */,
 				78D2129C202E3CFA0051B815 /* Observable+Bool.swift in Sources */,
+				B503F87823EB50B800082419 /* DrX+UITableView.swift in Sources */,
 				949D2C0D20A5D8A100A8C1A7 /* Observable+KeyPath.swift in Sources */,
-				94192B7B219611890010C208 /* DrXTableViewHeaderFooterView.swift in Sources */,
-				94CC37B32031E9B40018C210 /* DrX+UIPreviewing.swift in Sources */,
-				94192B77219610BD0010C208 /* DrXReuse.swift in Sources */,
-				94192B752196106B0010C208 /* DrXCollectionViewCell.swift in Sources */,
+				B503F87723EB50B800082419 /* DrX+UIPreviewing.swift in Sources */,
 				942375D921BAA9370072B2ED /* Bind+AnyRelay.swift in Sources */,
+				B503F87423EB50B800082419 /* DrXReuse.swift in Sources */,
 				78D21292202E28550051B815 /* Covariance.swift in Sources */,
 				78D2128E202E246C0051B815 /* DrXNamespace.swift in Sources */,
 				78D21298202E37F40051B815 /* Optional.swift in Sources */,
 				942375D221BAA7D30072B2ED /* RelayType.swift in Sources */,
+				B503F87623EB50B800082419 /* DrXTableViewHeaderFooterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

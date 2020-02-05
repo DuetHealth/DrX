@@ -5,6 +5,7 @@ xcode_scheme: DrX #4
 xcode_sdk: iphonesimulator13.3
 
 before_install:
+  - pod lib lint
   - brew install carthage
 
 install:
