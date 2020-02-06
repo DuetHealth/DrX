@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1EB1F17C23EC921E00904E8A /* ObservableType+Bind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB1F17B23EC921E00904E8A /* ObservableType+Bind.swift */; };
 		78D2128E202E246C0051B815 /* DrXNamespace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D2128D202E246C0051B815 /* DrXNamespace.swift */; };
 		78D21292202E28550051B815 /* Covariance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D21291202E28550051B815 /* Covariance.swift */; };
 		78D21294202E37130051B815 /* Replace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D21293202E37130051B815 /* Replace.swift */; };
@@ -75,6 +76,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1EB1F17B23EC921E00904E8A /* ObservableType+Bind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableType+Bind.swift"; sourceTree = "<group>"; };
 		78D2128D202E246C0051B815 /* DrXNamespace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrXNamespace.swift; sourceTree = "<group>"; };
 		78D21291202E28550051B815 /* Covariance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covariance.swift; sourceTree = "<group>"; };
 		78D21293202E37130051B815 /* Replace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Replace.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 				78D21293202E37130051B815 /* Replace.swift */,
 				78D21299202E38200051B815 /* Zip.swift */,
 				94B6AF8920F7C23700E185FC /* Disposable.swift */,
+				1EB1F17B23EC921E00904E8A /* ObservableType+Bind.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -381,6 +384,7 @@
 			files = (
 				94B6AF8A20F7C23700E185FC /* Disposable.swift in Sources */,
 				78D21294202E37130051B815 /* Replace.swift in Sources */,
+				1EB1F17C23EC921E00904E8A /* ObservableType+Bind.swift in Sources */,
 				B503F87523EB50B800082419 /* DrXTableViewCell.swift in Sources */,
 				B503F87323EB50B800082419 /* DrXCollectionViewCell.swift in Sources */,
 				78D2129A202E38200051B815 /* Zip.swift in Sources */,
