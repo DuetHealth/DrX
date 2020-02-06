@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1EB1F17E23ECA20800904E8A /* ObservableType+Relay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB1F17D23ECA20800904E8A /* ObservableType+Relay.swift */; };
 		78D2128E202E246C0051B815 /* DrXNamespace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D2128D202E246C0051B815 /* DrXNamespace.swift */; };
 		78D21292202E28550051B815 /* Covariance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D21291202E28550051B815 /* Covariance.swift */; };
 		78D21294202E37130051B815 /* Replace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D21293202E37130051B815 /* Replace.swift */; };
@@ -75,6 +76,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1EB1F17D23ECA20800904E8A /* ObservableType+Relay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableType+Relay.swift"; sourceTree = "<group>"; };
 		78D2128D202E246C0051B815 /* DrXNamespace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrXNamespace.swift; sourceTree = "<group>"; };
 		78D21291202E28550051B815 /* Covariance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covariance.swift; sourceTree = "<group>"; };
 		78D21293202E37130051B815 /* Replace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Replace.swift; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 				78D21295202E376F0051B815 /* EraseElements.swift */,
 				78D2129B202E3CFA0051B815 /* Observable+Bool.swift */,
 				949D2C0C20A5D8A100A8C1A7 /* Observable+KeyPath.swift */,
+				1EB1F17D23ECA20800904E8A /* ObservableType+Relay.swift */,
 				78D21297202E37F40051B815 /* Optional.swift */,
 				78D21293202E37130051B815 /* Replace.swift */,
 				78D21299202E38200051B815 /* Zip.swift */,
@@ -392,6 +395,7 @@
 				B503F87823EB50B800082419 /* DrX+UITableView.swift in Sources */,
 				949D2C0D20A5D8A100A8C1A7 /* Observable+KeyPath.swift in Sources */,
 				B503F87723EB50B800082419 /* DrX+UIPreviewing.swift in Sources */,
+				1EB1F17E23ECA20800904E8A /* ObservableType+Relay.swift in Sources */,
 				942375D921BAA9370072B2ED /* Bind+AnyRelay.swift in Sources */,
 				B503F87423EB50B800082419 /* DrXReuse.swift in Sources */,
 				78D21292202E28550051B815 /* Covariance.swift in Sources */,
