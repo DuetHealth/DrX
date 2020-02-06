@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import RxRelay
 import RxSwift
 
 /// Provides a type-erased interface for relays and relay-like types or controls.

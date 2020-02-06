@@ -7,16 +7,17 @@
 //
 
 import Foundation
-import RxRelay
 import RxSwift
 
 extension ObservableType {
+    
     func bind<R: RelayType>(to relay: R) -> Disposable where R.Element == Element {
-        bind(to: relay.asObserver())
+        subscribe(relay.asObserver())
     }
     
     func bind<R: RelayType>(to relay: R) -> Disposable where R.Element == Element? {
         map(Optional.some)
-            .bind(to: relay.asObserver())
+            .subscribe(relay.asObserver())
     }
+    
 }
