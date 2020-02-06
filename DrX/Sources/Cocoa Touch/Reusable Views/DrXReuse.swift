@@ -1,3 +1,4 @@
+#if canImport(UIKit)
 import Foundation
 import RxSwift
 import UIKit
@@ -18,3 +19,4 @@ public protocol DrXReuse: AnyObject {
     func prepareForReuse()
     
 }
+#endif
