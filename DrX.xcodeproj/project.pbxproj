@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1EB1F17E23ECA20800904E8A /* ObservableType+Relay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB1F17D23ECA20800904E8A /* ObservableType+Relay.swift */; };
 		78D2128E202E246C0051B815 /* DrXNamespace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D2128D202E246C0051B815 /* DrXNamespace.swift */; };
 		78D21292202E28550051B815 /* Covariance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D21291202E28550051B815 /* Covariance.swift */; };
 		78D21294202E37130051B815 /* Replace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D21293202E37130051B815 /* Replace.swift */; };
@@ -19,7 +20,6 @@
 		78D212A4202E40680051B815 /* CovariantSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D212A3202E40680051B815 /* CovariantSpec.swift */; };
 		942375D221BAA7D30072B2ED /* RelayType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942375D121BAA7D30072B2ED /* RelayType.swift */; };
 		942375D721BAA8870072B2ED /* AnyRelay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942375D621BAA8870072B2ED /* AnyRelay.swift */; };
-		942375D921BAA9370072B2ED /* Bind+AnyRelay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942375D821BAA9370072B2ED /* Bind+AnyRelay.swift */; };
 		949D2C0D20A5D8A100A8C1A7 /* Observable+KeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949D2C0C20A5D8A100A8C1A7 /* Observable+KeyPath.swift */; };
 		949D2C1120A5DB8500A8C1A7 /* Do.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949D2C1020A5DB8500A8C1A7 /* Do.swift */; };
 		94B6AF8A20F7C23700E185FC /* Disposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B6AF8920F7C23700E185FC /* Disposable.swift */; };
@@ -75,6 +75,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1EB1F17D23ECA20800904E8A /* ObservableType+Relay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableType+Relay.swift"; sourceTree = "<group>"; };
 		78D2128D202E246C0051B815 /* DrXNamespace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrXNamespace.swift; sourceTree = "<group>"; };
 		78D21291202E28550051B815 /* Covariance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covariance.swift; sourceTree = "<group>"; };
 		78D21293202E37130051B815 /* Replace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Replace.swift; sourceTree = "<group>"; };
@@ -93,7 +94,6 @@
 		94192B7A219611890010C208 /* DrXTableViewHeaderFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrXTableViewHeaderFooterView.swift; sourceTree = "<group>"; };
 		942375D121BAA7D30072B2ED /* RelayType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelayType.swift; sourceTree = "<group>"; };
 		942375D621BAA8870072B2ED /* AnyRelay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyRelay.swift; sourceTree = "<group>"; };
-		942375D821BAA9370072B2ED /* Bind+AnyRelay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bind+AnyRelay.swift"; sourceTree = "<group>"; };
 		949D2C0C20A5D8A100A8C1A7 /* Observable+KeyPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+KeyPath.swift"; sourceTree = "<group>"; };
 		949D2C0E20A5DAE500A8C1A7 /* DrX+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DrX+UITableView.swift"; sourceTree = "<group>"; };
 		949D2C1020A5DB8500A8C1A7 /* Do.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Do.swift; sourceTree = "<group>"; };
@@ -170,7 +170,6 @@
 			children = (
 				942375D621BAA8870072B2ED /* AnyRelay.swift */,
 				942375D121BAA7D30072B2ED /* RelayType.swift */,
-				942375D821BAA9370072B2ED /* Bind+AnyRelay.swift */,
 			);
 			path = Relays;
 			sourceTree = "<group>";
@@ -185,6 +184,7 @@
 				78D21295202E376F0051B815 /* EraseElements.swift */,
 				78D2129B202E3CFA0051B815 /* Observable+Bool.swift */,
 				949D2C0C20A5D8A100A8C1A7 /* Observable+KeyPath.swift */,
+				1EB1F17D23ECA20800904E8A /* ObservableType+Relay.swift */,
 				78D21297202E37F40051B815 /* Optional.swift */,
 				78D21293202E37130051B815 /* Replace.swift */,
 				78D21299202E38200051B815 /* Zip.swift */,
@@ -392,7 +392,7 @@
 				B503F87823EB50B800082419 /* DrX+UITableView.swift in Sources */,
 				949D2C0D20A5D8A100A8C1A7 /* Observable+KeyPath.swift in Sources */,
 				B503F87723EB50B800082419 /* DrX+UIPreviewing.swift in Sources */,
-				942375D921BAA9370072B2ED /* Bind+AnyRelay.swift in Sources */,
+				1EB1F17E23ECA20800904E8A /* ObservableType+Relay.swift in Sources */,
 				B503F87423EB50B800082419 /* DrXReuse.swift in Sources */,
 				78D21292202E28550051B815 /* Covariance.swift in Sources */,
 				78D2128E202E246C0051B815 /* DrXNamespace.swift in Sources */,

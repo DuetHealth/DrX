@@ -1,13 +1,4 @@
-//
-//  AnyRelay.swift
-//  DrX
-//
-//  Created by Ryan Wachowski on 8/22/18.
-//  Copyright © 2018 Duet Health. All rights reserved.
-//
-
 import Foundation
-import RxRelay
 import RxSwift
 
 /// Provides a type-erased interface for relays and relay-like types or controls.
