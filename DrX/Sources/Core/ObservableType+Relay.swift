@@ -1,7 +1,7 @@
 import Foundation
 import RxSwift
 
-extension ObservableType {
+public extension ObservableType {
     
     func bind<R: RelayType>(to relay: R) -> Disposable where R.Element == Element {
         subscribe(relay.asObserver())
