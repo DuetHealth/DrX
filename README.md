@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/DuetHealth/DrX.svg?branch=master)](https://travis-ci.org/DuetHealth/DrX)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Swift Package Manager](https://github.com/DuetHealth/DrX/workflows/Swift%20Package%20Manager/badge.svg)](https://github.com/DuetHealth/DrX/actions?query=workflow%3A%22Swift+Package+Manager%22) [![Carthage](https://github.com/DuetHealth/DrX/workflows/Carthage/badge.svg)](https://github.com/DuetHealth/DrX/actions?query=workflow%3ACarthage) [![Cocoapods](https://github.com/DuetHealth/DrX/workflows/Cocoapods/badge.svg)](https://github.com/DuetHealth/DrX/actions?query=workflow%3ACocoapods)
 
 # DrX
 
