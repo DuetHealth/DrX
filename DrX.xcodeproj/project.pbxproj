@@ -208,10 +208,8 @@
 		B54E9C721FC356B9000301C6 /* DrXTests */ = {
 			isa = PBXGroup;
 			children = (
+				B5E51BFB244B954F00AC06E2 /* Sources */,
 				78D212A5202E43E60051B815 /* Supporting Files */,
-				78D212A3202E40680051B815 /* CovariantSpec.swift */,
-				78D212A1202E3F9F0051B815 /* Observable+BoolSpec.swift */,
-				78D2129F202E3F3B0051B815 /* ZipSpec.swift */,
 			);
 			path = DrXTests;
 			sourceTree = "<group>";
@@ -234,6 +232,16 @@
 				B5AF5B491FCCCA04005265F4 /* DrX.h */,
 				94CC37B02031E96E0018C210 /* Core */,
 				94CC37B12031E9790018C210 /* Cocoa Touch */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		B5E51BFB244B954F00AC06E2 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				78D212A3202E40680051B815 /* CovariantSpec.swift */,
+				78D212A1202E3F9F0051B815 /* Observable+BoolSpec.swift */,
+				78D2129F202E3F3B0051B815 /* ZipSpec.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
