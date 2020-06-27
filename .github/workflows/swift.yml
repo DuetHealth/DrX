@@ -1,0 +1,20 @@
+name: Swift Package Manager
+
+on:
+  push:
+    branches: [master, develop]
+  pull_request:
+    branches: [master, develop]
+
+jobs:
+  build:
+    runs-on: macos-latest
+    strategy:
+      matrix:
+        destination: ['platform=iOS Simulator,OS=13.1,name=iPhone 8']
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build
+      run: swift build -Xswiftc "-sdk" -Xswiftc "`xcrun --sdk iphonesimulator --show-sdk-path`" -Xswiftc "-target" -Xswiftc "x86_64-apple-ios13.1-simulator" -v
+    - name: Run tests
+      run: swift test 

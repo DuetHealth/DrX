@@ -1,0 +1,19 @@
+name: Cocoapods
+
+on:
+  push:
+    branches: [ master, develop ]
+  pull_request:
+    branches: [ master, develop ]
+
+jobs:
+  build:
+    runs-on: macOS-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: pod lib lint
+      run: |
+        echo allow-warnings due to - https://github.com/CocoaPods/CocoaPods/issues/8570
+        pod lib lint --allow-warnings
+      shell: bash
+

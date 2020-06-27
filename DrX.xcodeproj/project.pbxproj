@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,10 +23,6 @@
 		949D2C0D20A5D8A100A8C1A7 /* Observable+KeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949D2C0C20A5D8A100A8C1A7 /* Observable+KeyPath.swift */; };
 		949D2C1120A5DB8500A8C1A7 /* Do.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949D2C1020A5DB8500A8C1A7 /* Do.swift */; };
 		94B6AF8A20F7C23700E185FC /* Disposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B6AF8920F7C23700E185FC /* Disposable.swift */; };
-		B503F84823EB11DE00082419 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B578765923EA2DF2004D4E21 /* RxRelay.framework */; };
-		B503F84B23EB126900082419 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B568B3E421F69E9300A48166 /* RxCocoa.framework */; };
-		B503F84D23EB126B00082419 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B568B3E321F69E9300A48166 /* RxSwift.framework */; };
-		B503F84F23EB152600082419 /* RxRelay.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = B578765923EA2DF2004D4E21 /* RxRelay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B503F87223EB50B800082419 /* DrXCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94192B71219610440010C208 /* DrXCollectionReusableView.swift */; };
 		B503F87323EB50B800082419 /* DrXCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94192B742196106B0010C208 /* DrXCollectionViewCell.swift */; };
 		B503F87423EB50B800082419 /* DrXReuse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94192B76219610BD0010C208 /* DrXReuse.swift */; };
@@ -35,15 +31,12 @@
 		B503F87723EB50B800082419 /* DrX+UIPreviewing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CC37B22031E9B40018C210 /* DrX+UIPreviewing.swift */; };
 		B503F87823EB50B800082419 /* DrX+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949D2C0E20A5DAE500A8C1A7 /* DrX+UITableView.swift */; };
 		B54E9C6F1FC356B9000301C6 /* DrX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54E9C651FC356B9000301C6 /* DrX.framework */; };
-		B568B3DE21F69E4D00A48166 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B568B3DC21F69E4D00A48166 /* Quick.framework */; };
-		B568B3DF21F69E4D00A48166 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B568B3DD21F69E4D00A48166 /* Nimble.framework */; };
-		B568B3E121F69E6800A48166 /* Quick.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = B568B3DC21F69E4D00A48166 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B568B3E221F69E6D00A48166 /* Nimble.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = B568B3DD21F69E4D00A48166 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B568B3EA21F69FC700A48166 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B568B3E421F69E9300A48166 /* RxCocoa.framework */; };
-		B568B3EB21F69FC700A48166 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B568B3E321F69E9300A48166 /* RxSwift.framework */; };
-		B568B3EC21F69FD500A48166 /* RxCocoa.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = B568B3E421F69E9300A48166 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B568B3ED21F69FD500A48166 /* RxSwift.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = B568B3E321F69E9300A48166 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B5AF5B4A1FCCCA04005265F4 /* DrX.h in Headers */ = {isa = PBXBuildFile; fileRef = B5AF5B491FCCCA04005265F4 /* DrX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5E51BF0244B8BDE00AC06E2 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = B5E51BEF244B8BDE00AC06E2 /* RxRelay */; };
+		B5E51BF2244B8BDE00AC06E2 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B5E51BF1244B8BDE00AC06E2 /* RxSwift */; };
+		B5E51BF4244B8BDE00AC06E2 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = B5E51BF3244B8BDE00AC06E2 /* RxCocoa */; };
+		B5E51BF7244B8C5100AC06E2 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = B5E51BF6244B8C5100AC06E2 /* Nimble */; };
+		B5E51BFA244B8C7100AC06E2 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = B5E51BF9244B8C7100AC06E2 /* Quick */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,24 +48,6 @@
 			remoteInfo = ChargeCapture;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		B568B3E021F69E5600A48166 /* Copy Carthage Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				B503F84F23EB152600082419 /* RxRelay.framework in Copy Carthage Frameworks */,
-				B568B3EC21F69FD500A48166 /* RxCocoa.framework in Copy Carthage Frameworks */,
-				B568B3ED21F69FD500A48166 /* RxSwift.framework in Copy Carthage Frameworks */,
-				B568B3E221F69E6D00A48166 /* Nimble.framework in Copy Carthage Frameworks */,
-				B568B3E121F69E6800A48166 /* Quick.framework in Copy Carthage Frameworks */,
-			);
-			name = "Copy Carthage Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1EB1F17D23ECA20800904E8A /* ObservableType+Relay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableType+Relay.swift"; sourceTree = "<group>"; };
@@ -116,9 +91,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B503F84B23EB126900082419 /* RxCocoa.framework in Frameworks */,
-				B503F84823EB11DE00082419 /* RxRelay.framework in Frameworks */,
-				B503F84D23EB126B00082419 /* RxSwift.framework in Frameworks */,
+				B5E51BF4244B8BDE00AC06E2 /* RxCocoa in Frameworks */,
+				B5E51BF2244B8BDE00AC06E2 /* RxSwift in Frameworks */,
+				B5E51BF0244B8BDE00AC06E2 /* RxRelay in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,10 +102,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B54E9C6F1FC356B9000301C6 /* DrX.framework in Frameworks */,
-				B568B3DE21F69E4D00A48166 /* Quick.framework in Frameworks */,
-				B568B3DF21F69E4D00A48166 /* Nimble.framework in Frameworks */,
-				B568B3EA21F69FC700A48166 /* RxCocoa.framework in Frameworks */,
-				B568B3EB21F69FC700A48166 /* RxSwift.framework in Frameworks */,
+				B5E51BFA244B8C7100AC06E2 /* Quick in Frameworks */,
+				B5E51BF7244B8C5100AC06E2 /* Nimble in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,10 +208,8 @@
 		B54E9C721FC356B9000301C6 /* DrXTests */ = {
 			isa = PBXGroup;
 			children = (
+				B5E51BFB244B954F00AC06E2 /* Sources */,
 				78D212A5202E43E60051B815 /* Supporting Files */,
-				78D212A3202E40680051B815 /* CovariantSpec.swift */,
-				78D212A1202E3F9F0051B815 /* Observable+BoolSpec.swift */,
-				78D2129F202E3F3B0051B815 /* ZipSpec.swift */,
 			);
 			path = DrXTests;
 			sourceTree = "<group>";
@@ -261,6 +232,16 @@
 				B5AF5B491FCCCA04005265F4 /* DrX.h */,
 				94CC37B02031E96E0018C210 /* Core */,
 				94CC37B12031E9790018C210 /* Cocoa Touch */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		B5E51BFB244B954F00AC06E2 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				78D212A3202E40680051B815 /* CovariantSpec.swift */,
+				78D212A1202E3F9F0051B815 /* Observable+BoolSpec.swift */,
+				78D2129F202E3F3B0051B815 /* ZipSpec.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -293,6 +274,11 @@
 			dependencies = (
 			);
 			name = DrX;
+			packageProductDependencies = (
+				B5E51BEF244B8BDE00AC06E2 /* RxRelay */,
+				B5E51BF1244B8BDE00AC06E2 /* RxSwift */,
+				B5E51BF3244B8BDE00AC06E2 /* RxCocoa */,
+			);
 			productName = ChargeCapture;
 			productReference = B54E9C651FC356B9000301C6 /* DrX.framework */;
 			productType = "com.apple.product-type.framework";
@@ -304,7 +290,6 @@
 				B54E9C6A1FC356B9000301C6 /* Sources */,
 				B54E9C6B1FC356B9000301C6 /* Frameworks */,
 				B54E9C6C1FC356B9000301C6 /* Resources */,
-				B568B3E021F69E5600A48166 /* Copy Carthage Frameworks */,
 			);
 			buildRules = (
 			);
@@ -312,6 +297,10 @@
 				B54E9C711FC356B9000301C6 /* PBXTargetDependency */,
 			);
 			name = DrXTests;
+			packageProductDependencies = (
+				B5E51BF6244B8C5100AC06E2 /* Nimble */,
+				B5E51BF9244B8C7100AC06E2 /* Quick */,
+			);
 			productName = ChargeCaptureTests;
 			productReference = B54E9C6E1FC356B9000301C6 /* DrXTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -347,6 +336,11 @@
 				Base,
 			);
 			mainGroup = B54E9C5B1FC356B9000301C6;
+			packageReferences = (
+				B5E51BEE244B8BDE00AC06E2 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				B5E51BF5244B8C5100AC06E2 /* XCRemoteSwiftPackageReference "Nimble" */,
+				B5E51BF8244B8C7100AC06E2 /* XCRemoteSwiftPackageReference "Quick" */,
+			);
 			productRefGroup = B54E9C661FC356B9000301C6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -460,7 +454,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -524,7 +518,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -536,7 +530,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -559,7 +554,11 @@
 				INFOPLIST_FILE = "DrX/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.duet.DrX;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -583,7 +582,11 @@
 				INFOPLIST_FILE = "DrX/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.duet.DrX;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -596,10 +599,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 75Y586SA36;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "DrXTests/Supporting Files/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.duet.DrXTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -611,10 +618,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 75Y586SA36;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "DrXTests/Supporting Files/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.duet.DrXTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -652,6 +663,61 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B5E51BEE244B8BDE00AC06E2 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
+		B5E51BF5244B8C5100AC06E2 /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.7;
+			};
+		};
+		B5E51BF8244B8C7100AC06E2 /* XCRemoteSwiftPackageReference "Quick" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Quick.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B5E51BEF244B8BDE00AC06E2 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5E51BEE244B8BDE00AC06E2 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		B5E51BF1244B8BDE00AC06E2 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5E51BEE244B8BDE00AC06E2 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		B5E51BF3244B8BDE00AC06E2 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5E51BEE244B8BDE00AC06E2 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		B5E51BF6244B8C5100AC06E2 /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5E51BF5244B8C5100AC06E2 /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+		B5E51BF9244B8C7100AC06E2 /* Quick */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5E51BF8244B8C7100AC06E2 /* XCRemoteSwiftPackageReference "Quick" */;
+			productName = Quick;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B54E9C5C1FC356B9000301C6 /* Project object */;
 }

@@ -1,0 +1,22 @@
+name: Carthage
+
+on:
+  push:
+    branches: [ master, develop ]
+  pull_request:
+    branches: [ master, develop ]
+
+jobs:
+  test:
+    runs-on: macOS-latest
+    strategy:
+      matrix:
+        destination: ['platform=iOS Simulator,OS=13.1,name=iPhone 8']
+    steps:
+    - uses: actions/checkout@master
+    - name: carthage build
+      run: |
+        echo cache-builds to work around: https://github.com/Carthage/Carthage/issues/2555
+        carthage build --cache-builds --no-skip-current --verbose
+      shell: bash
+
