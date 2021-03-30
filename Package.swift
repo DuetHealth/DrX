@@ -4,7 +4,7 @@ import PackageDescription
 
 let package = Package(
     name: "DrX",
-    platforms: [.iOS(.v8)],
+    platforms: [.iOS(.v9)],
     products: [.library(name: "DrX", targets: ["DrX"])],
     dependencies: [.package(url: "https://github.com/ReactiveX/RxSwift.git", from: "6.0.0"),
                    .package(url: "https://github.com/Quick/Nimble.git", from: "9.0.0"),
