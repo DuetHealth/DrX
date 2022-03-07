@@ -10,8 +10,8 @@ Pod::Spec.new do |s|
   s.homepage              = "#{s.source[:git]}"
   s.default_subspec       = 'Core'
   s.requires_arc          = true
-  s.ios.deployment_target = '8.0'
-  s.swift_version         = '5.0'
+  s.ios.deployment_target = '12.0'
+  s.swift_version         = '5.5'
 
   s.subspec 'Core' do |core|
     core.source_files = "DrX/Sources/Core/**/*.{h,m,swift}"
