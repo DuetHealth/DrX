@@ -6,7 +6,7 @@ let package = Package(
     name: "DrX",
     platforms: [.iOS(.v12)],
     products: [.library(name: "DrX", targets: ["DrX"])],
-    dependencies: [.package(url: "https://github.com/ReactiveX/RxSwift.git", .exact("5.1.3")),
+    dependencies: [.package(url: "https://github.com/ReactiveX/RxSwift.git", .exact("6.0.0")),
                    .package(url: "https://github.com/Quick/Nimble.git", from: "8.0.0"),
                    .package(url: "https://github.com/Quick/Quick.git", from: "2.2.0"),
                   ],
