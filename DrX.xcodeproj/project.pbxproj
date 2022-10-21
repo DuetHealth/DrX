@@ -672,7 +672,7 @@
 			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 5.1.1;
+				minimumVersion = 6.5.0;
 			};
 		};
 		B5E51BF5244B8C5100AC06E2 /* XCRemoteSwiftPackageReference "Nimble" */ = {
