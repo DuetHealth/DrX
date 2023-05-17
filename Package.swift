@@ -4,11 +4,11 @@ import PackageDescription
 
 let package = Package(
     name: "DrX",
-    platforms: [.iOS(.v12)],
+    platforms: [.iOS(.v13)],
     products: [.library(name: "DrX", targets: ["DrX"])],
-    dependencies: [.package(url: "https://github.com/ReactiveX/RxSwift.git", .exact("5.1.3")),
-                   .package(url: "https://github.com/Quick/Nimble.git", from: "8.0.0"),
-                   .package(url: "https://github.com/Quick/Quick.git", from: "2.2.0"),
+    dependencies: [.package(url: "https://github.com/ReactiveX/RxSwift.git", from: "6.0.0"),
+                   .package(url: "https://github.com/Quick/Nimble.git", from: "12.0.0"),
+                   .package(url: "https://github.com/Quick/Quick.git", from: "6.0.0"),
                   ],
     targets: [
         .target(name: "DrX", dependencies: ["RxSwift", "RxCocoa", "RxRelay"], path: "DrX/Sources", exclude: ["DrX.h"]),
