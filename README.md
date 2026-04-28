@@ -17,7 +17,7 @@ Swift Package Manager:
 ### Running tests
 
 ```bash
-xcodebuild test -scheme DrX -destination 'platform=iOS Simulator,name=iPhone 16,OS=latest'
+xcodebuild test -scheme DrX -destination 'platform=iOS Simulator,name=iPhone 17 Pro,OS=latest'
 ```
 
 ## License
