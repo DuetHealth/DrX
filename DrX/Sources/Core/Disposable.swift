@@ -1,7 +1,7 @@
 import Foundation
 import RxSwift
 
-fileprivate var disposableKey = UInt8.max
+nonisolated(unsafe) private var disposableKey = UInt8.max
 
 public extension Disposable {
 

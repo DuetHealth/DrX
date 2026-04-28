@@ -5,7 +5,7 @@ import UIKit
 
 /// Types which conform to `DrXReuse` provide ways for subclasses to maintain lifetime
 /// and reuse-cycle subscriptions.
-public protocol DrXReuse: AnyObject {
+@MainActor public protocol DrXReuse: AnyObject {
     
     /// The disposable container for any bindings with a lifetime equivalent to that of the object.
     /// Any resources are freed when the object is deallocated.
