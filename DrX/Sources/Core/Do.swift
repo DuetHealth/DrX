@@ -2,7 +2,7 @@ import Foundation
 import RxSwift
 
 /// The set of all possible events that may occur during the lifecycle of an observable sequence.
-public struct SequenceEvent: OptionSet {
+public struct SequenceEvent: OptionSet, Sendable {
     public typealias RawValue = Int
 
     public let rawValue: Int

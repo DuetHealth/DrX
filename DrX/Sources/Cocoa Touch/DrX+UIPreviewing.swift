@@ -61,7 +61,7 @@ public class RxViewControllerPreviewingDelegateProxy: NSObject, UIViewController
 
 }
 
-fileprivate var previewingDelegateKey = UInt8.max
+nonisolated(unsafe) private var previewingDelegateKey = UInt8.max
 
 public extension Reactive where Base: UITableView {
 

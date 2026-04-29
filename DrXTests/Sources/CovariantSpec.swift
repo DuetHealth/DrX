@@ -28,6 +28,8 @@ class CovariantSpec: QuickSpec {
                     expect(foos.count).toEventually(equal(3))
                 }
 
+                // throwAssertion() requires x86_64 (Nimble uses Mach exception handling)
+                #if arch(x86_64)
                 it("Produces a fatal error when attempting to cast unrelated types") {
                     var foos = [Foo]()
                     let behavior = {
@@ -40,6 +42,7 @@ class CovariantSpec: QuickSpec {
                     }
                     expect(behavior()).toEventually(throwAssertion())
                 }
+                #endif
 
             }
 
@@ -55,6 +58,7 @@ class CovariantSpec: QuickSpec {
                     expect(foos.count).toEventually(equal(3))
                 }
 
+                #if arch(x86_64)
                 it("Produces a fatal error when attempting to cast unrelated sequence element types") {
                     let behavior = {
                         Observable.just([Baz(), Baz(), Baz()])
@@ -66,6 +70,7 @@ class CovariantSpec: QuickSpec {
                     }
                     expect(behavior()).toEventually(throwAssertion())
                 }
+                #endif
 
             }
 
